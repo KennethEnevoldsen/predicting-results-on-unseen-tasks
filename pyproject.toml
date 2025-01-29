@@ -1,0 +1,14 @@
+[project]
+name = "predicting-unseen-tasks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = ["mteb>=1.31.3"]
+
+[dependency-groups]
+lint = ["ruff>=0.9.3"]
+dev = ["ipykernel>=6.29.5", "pip>=25.0"]
+test = [
+    "pytest>=8.3.4",
+]
