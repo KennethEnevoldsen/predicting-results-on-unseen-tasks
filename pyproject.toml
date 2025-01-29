@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "predicting-unseen-tasks"
 version = "0.1.0"
@@ -9,6 +13,4 @@ dependencies = ["mteb>=1.31.3"]
 [dependency-groups]
 lint = ["ruff>=0.9.3"]
 dev = ["ipykernel>=6.29.5", "pip>=25.0"]
-test = [
-    "pytest>=8.3.4",
-]
+test = ["pytest>=8.3.4"]

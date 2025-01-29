@@ -11,18 +11,18 @@ install-uv:
 
 lint:
 	@echo "--- 🧹 Running linters ---"
-	ruff format . 			# running ruff formatting
-	ruff check . --fix  	# running ruff linting
+	uv run ruff format . 			# running ruff formatting
+	uv run ruff check . --fix  	# running ruff linting
 
 lint-check:
 	@echo "--- 🧹 Check is project is linted ---"
 	# Required for CI to work, otherwise it will just pass
-	ruff format . --check						    # running ruff formatting
-	ruff check **/*.py 						        # running ruff linting
+	uv run ruff format . --check						    # running ruff formatting
+	uv run ruff check **/*.py 						        # running ruff linting
 
 test:
 	@echo "--- 🧪 Running tests ---"
-	pytest src/tests
+	uv run pytest src/tests
 
 pr:
 	@echo "--- 🚀 Running requirements for a PR ---"

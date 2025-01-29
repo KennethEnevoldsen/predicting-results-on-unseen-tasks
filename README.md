@@ -2,6 +2,14 @@
 
 a WIP
 
+# Usage Documentation
+
+```py
+from predicting_unseen_tasks.fetch_data import fetch_mteb_data
+
+df = fetch_mteb_data()
+```
+
 
 # Setting the project up for development
 
@@ -31,4 +39,13 @@ For linting this project uses [ruff](https://docs.astral.sh/ruff/). You can run 
 
 ```py
 make lint
+```
+
+## Testing
+
+This project uses pytest for tests. The tests are located in `src/tests` and can be run using pytest (or its integration, e.g. the vs code IDE) or you
+can run it using:
+
+```py
+make test
 ```

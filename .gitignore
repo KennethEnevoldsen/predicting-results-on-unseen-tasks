@@ -1,0 +1,6 @@
+# python
+*.pyc
+*.egg-info
+
+# tmp scripts
+tmp.py

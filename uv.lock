@@ -1089,7 +1089,7 @@ wheels = [
 [[package]]
 name = "predicting-unseen-tasks"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "mteb" },
 ]
