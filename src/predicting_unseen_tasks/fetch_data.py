@@ -5,7 +5,7 @@ import mteb
 import pandas as pd
 
 logger = logging.getLogger(__name__)
-default_data_path = Path(__file__).parent.parent / "data"
+default_data_path = Path(__file__).parent.parent.parent / "data"
 
 
 def fetch_mteb_data(
